@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    background-color: #fef6e4;
+    color: #333;
+  }
+  
+  #slot-machine {
+    font-size: 60px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .slot {
+    border: 2px solid #ccc;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 10px;
+  }
+  
+  #spin-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
