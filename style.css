@@ -1,64 +1,63 @@
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: radial-gradient(circle, #1e1e1e, #000);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .container {
-    text-align: center;
-    background: #2c2c2c;
-    padding: 40px;
-    border-radius: 16px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    width: 90%;
-    max-width: 400px;
-  }
-  
-  input[type="text"] {
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    width: 80%;
-    margin-bottom: 20px;
-  }
-  
-  .button {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    background: gold;
-    color: black;
-    font-size: 16px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .button:hover {
-    background: #ffd700;
-  }
-  
-  .button.admin {
-    background: crimson;
-    color: white;
-  }
-  
-  .button.admin:hover {
-    background: #ff4d4d;
-  }
-  
-  .balance-text {
-    font-size: 18px;
-    margin: 15px 0;
-    color: #ccc;
-  }
-  
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #4b2e2e; /* deep brown */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background: #3c2626; /* slightly darker brown for contrast */
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+}
+
+input[type="text"] {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background: #d2a679; /* tan/brown accent */
+  color: black;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #e6bb8a;
+}
+
+.button.admin {
+  background: #993333; /* dark red */
+  color: white;
+}
+
+.button.admin:hover {
+  background: #cc4444;
+}
+
+.balance-text {
+  font-size: 18px;
+  margin: 15px 0;
+  color: #e6e6e6;
+}
