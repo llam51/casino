@@ -2,23 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Casino - Login</title>
+  <title>Casino - Main Menu</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>🎰 Welcome to Casino With Friends</h1>
+  <div class="container">
+    <h1>🎰 Casino With Friends</h1>
 
-  <div id="login-screen">
-    <input type="text" id="username-input" placeholder="Enter your name" />
-    <button onclick="login()">Enter Casino</button>
-  </div>
+    <div id="login-screen">
+      <input type="text" id="username-input" placeholder="Enter your name" />
+      <button onclick="login()" class="button">Enter Casino</button>
+    </div>
 
-  <div id="menu-screen" style="display:none;">
-    <h2 id="welcome-message"></h2>
-    <p>Balance: $<span id="user-balance">0</span></p>
-    <button onclick="location.href='slots.html'">🎰 Play Slots</button>
-    <button onclick="location.href='account.html'">💳 View Account</button>
-    <button id="admin-btn" style="display:none;" onclick="location.href='admin.html'">🛠️ Admin Panel</button>
+    <div id="menu-screen" style="display:none;">
+      <h2 id="welcome-message"></h2>
+      <p class="balance-text">Balance: $<span id="user-balance">0</span></p>
+
+      <div class="button-group">
+        <button class="button" onclick="location.href='slots.html'">🎰 Play Slots</button>
+        <button class="button" onclick="location.href='account.html'">💳 View Account</button>
+        <button class="button admin" id="admin-btn" style="display:none;" onclick="location.href='admin.html'">🛠️ Admin Panel</button>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
