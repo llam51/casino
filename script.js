@@ -5,7 +5,7 @@ function login() {
   
     let users = JSON.parse(localStorage.getItem("users")) || {};
   
-    // Create new user if doesn't exist
+    // If user doesn't exist, create one
     if (!users[username]) {
       users[username] = {
         balance: 100,
@@ -13,6 +13,7 @@ function login() {
       };
     }
   
+    // Save current user and updated list
     localStorage.setItem("currentUser", username);
     localStorage.setItem("users", JSON.stringify(users));
   
@@ -31,7 +32,7 @@ function login() {
     }
   }
   
-  // Auto login if already saved
+  // Auto login on page load if saved
   window.onload = () => {
     const currentUser = localStorage.getItem("currentUser");
     const users = JSON.parse(localStorage.getItem("users")) || {};
@@ -40,4 +41,4 @@ function login() {
       showMenu(users[currentUser]);
     }
   };
-  
+      
