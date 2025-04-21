@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Casino With Friends</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Casino - Login</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>🎰 Casino With Friends</h1>
-  <div id="slot-machine">
-    <div class="slot">❓</div>
-    <div class="slot">❓</div>
-    <div class="slot">❓</div>
+  <h1>🎰 Welcome to Casino With Friends</h1>
+
+  <div id="login-screen">
+    <input type="text" id="username-input" placeholder="Enter your name" />
+    <button onclick="login()">Enter Casino</button>
   </div>
-  <button id="spin-button">Spin</button>
-  <p id="message"></p>
+
+  <div id="menu-screen" style="display:none;">
+    <h2 id="welcome-message"></h2>
+    <p>Balance: $<span id="user-balance">0</span></p>
+    <button onclick="location.href='slots.html'">🎰 Play Slots</button>
+    <button onclick="location.href='account.html'">💳 View Account</button>
+    <button id="admin-btn" style="display:none;" onclick="location.href='admin.html'">🛠️ Admin Panel</button>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
